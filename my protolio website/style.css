@@ -62,11 +62,9 @@ transition: all .45s ease;
 section{
     padding: 160px 15% 120px;
 }
-.home{
+#home{
     position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url(./assets/image/background.png);
+    background-image: url(./assets/image/background1.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -183,6 +181,7 @@ section{
     font-weight: 500;
 }
 .contact-text h2{
+    margin: 10rem;
     font-size: 3rem;
     line-height: 1;
 
@@ -210,7 +209,7 @@ section{
     color: #fff;
     transform: translate(5px);
 }
- .contact-icons i{
+ .contact-icons .icon{
     height: 45px;
     width: 45px;
     color: #fff;
@@ -221,8 +220,8 @@ section{
     border-radius: 8px;
     margin-right: 15px;
     transition: all .45s ease;
-}
-.contact-icons i:hover{
+} 
+.contact-icons .icon:hover{
 
     color: rgb(128, 0, 111);
 }
@@ -273,12 +272,16 @@ section{
     color: #fff;
 
 }
-.top {
+.top .icon{
     padding: 10px;
     border-radius: 8px;
     font-size: 15px;
     color: #fff;
     background: rgb(128, 0, 111);
+}
+.top .icon:hover{
+transform: scale(1.4);
+cursor: pointer;
 }
 @media(max-width: 1480px){
     header{
